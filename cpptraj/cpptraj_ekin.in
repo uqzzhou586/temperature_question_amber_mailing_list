@@ -1,0 +1,6 @@
+parm ../DSPC_128.prmtop
+trajin ../DSPC_128.nc
+energy ekin_lipid :ST,PC out cpptraj_ekin_lipid.agr kinetic
+energy ekin_solvent :WAT out cpptraj_ekin_solvent.agr kinetic
+energy ekin_system @* out cpptraj_ekin_system.agr kinetic
+run

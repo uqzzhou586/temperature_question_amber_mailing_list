@@ -1,0 +1,6 @@
+parm ../DSPC_128.prmtop
+trajin ../DSPC_128.nc
+temperature temp_lipid :ST,PC ntc 2 out cpptraj_temp-from-vel_lipid.agr
+temperature temp_solvent :WAT ntc 2 out cpptraj_temp-from-vel_solvent.agr
+temperature temp_system @* ntc 2 out cpptraj_temp-from-vel_system.agr
+run
